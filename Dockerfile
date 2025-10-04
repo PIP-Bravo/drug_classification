@@ -3,13 +3,12 @@ FROM tensorflow/serving:latest
 ARG MODEL_NAME=drug_classification
 ARG MODEL_BASE_PATH=/models
 
-COPY ./output/serving_model/1759538723 ${MODEL_BASE_PATH}/${MODEL_NAME}/1
+COPY ./serving_model/1759538723 /models/${MODEL_NAME}/1
 
 ENV MODEL_NAME=${MODEL_NAME}
 ENV MODEL_BASE_PATH=${MODEL_BASE_PATH}
 
-EXPOSE 8500
-EXPOSE 8501
+EXPOSE 8080
 
 CMD ["tensorflow_model_server", \
      "--rest_api_port=8501", \
