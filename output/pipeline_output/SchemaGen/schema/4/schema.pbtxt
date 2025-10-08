@@ -1,0 +1,106 @@
+feature {
+  name: "Age"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "BP"
+  type: BYTES
+  domain: "BP"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Cholesterol"
+  type: BYTES
+  domain: "Cholesterol"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Drug"
+  type: BYTES
+  domain: "Drug"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Na_to_K"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Sex"
+  type: BYTES
+  domain: "Sex"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+string_domain {
+  name: "BP"
+  value: "HIGH"
+  value: "LOW"
+  value: "NORMAL"
+}
+string_domain {
+  name: "Cholesterol"
+  value: "HIGH"
+  value: "NORMAL"
+}
+string_domain {
+  name: "Drug"
+  value: "DrugY"
+  value: "drugA"
+  value: "drugB"
+  value: "drugC"
+  value: "drugX"
+}
+string_domain {
+  name: "Sex"
+  value: "F"
+  value: "M"
+}

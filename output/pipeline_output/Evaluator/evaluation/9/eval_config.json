@@ -1,0 +1,81 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "Drug",
+        "predictionKey": "probabilities"
+      }
+    ],
+    "slicingSpecs": [
+      {}
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "SparseCategoricalAccuracy"
+          },
+          {
+            "className": "SparseCategoricalCrossentropy"
+          },
+          {
+            "className": "Precision",
+            "config": "{\"class_id\": 0}"
+          },
+          {
+            "className": "Recall",
+            "config": "{\"class_id\": 0}"
+          },
+          {
+            "className": "Precision",
+            "config": "{\"class_id\": 1}"
+          },
+          {
+            "className": "Recall",
+            "config": "{\"class_id\": 1}"
+          },
+          {
+            "className": "Precision",
+            "config": "{\"class_id\": 2}"
+          },
+          {
+            "className": "Recall",
+            "config": "{\"class_id\": 2}"
+          },
+          {
+            "className": "Precision",
+            "config": "{\"class_id\": 3}"
+          },
+          {
+            "className": "Recall",
+            "config": "{\"class_id\": 3}"
+          },
+          {
+            "className": "Precision",
+            "config": "{\"class_id\": 4}"
+          },
+          {
+            "className": "Recall",
+            "config": "{\"class_id\": 4}"
+          }
+        ],
+        "modelNames": [
+          ""
+        ],
+        "thresholds": {
+          "sparse_categorical_accuracy": {
+            "valueThreshold": {
+              "lowerBound": 0.5
+            }
+          }
+        }
+      }
+    ]
+  },
+  "version": "0.42.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "C:\\drug-pipeline\\output\\pipeline_output\\Trainer\\model\\8\\Format-Serving"
+  }
+}
